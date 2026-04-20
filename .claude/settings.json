@@ -7,7 +7,8 @@
       "Read(//usr/local/bin/**)",
       "Read(//usr/**)",
       "Read(//home/raghib/**)",
-      "Bash(/home/raghib/.gradle/wrapper/dists/gradle-9.2.0-bin/11i5gvueggl8a5cioxuftxrik/gradle-9.2.0/bin/gradle wrapper *)"
+      "Bash(/home/raghib/.gradle/wrapper/dists/gradle-9.2.0-bin/11i5gvueggl8a5cioxuftxrik/gradle-9.2.0/bin/gradle wrapper *)",
+      "Bash(./gradlew clean *)"
     ]
   }
 }
