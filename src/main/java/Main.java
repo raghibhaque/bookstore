@@ -2,16 +2,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter book title: ");
-        String title = sc.nextLine();
-        System.out.print("Enter book author: ");
-        String author = sc.nextLine();
-        System.out.print("Enter book year of publication: ");
-        int yearofPublication = sc.nextInt();
-        System.out.print("Enter book ISBN: ");
-        double isbn = sc.nextDouble();
-        Book book = new Book(title, author, yearofPublication, isbn);
+
+        Book book;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter book title: ");
+            String title = sc.nextLine();
+            System.out.print("Enter book author: ");
+            String author = sc.nextLine();
+            System.out.print("Enter book year of publication: ");
+            int yearofPublication = sc.nextInt();
+            System.out.print("Enter book ISBN: ");
+            double isbn = sc.nextDouble();
+            book = new Book(title, author, yearofPublication, isbn);
+        }
         System.out.println("Book Details:");
         System.out.println("Title: " + book.getTitle());
         System.out.println("Author: " + book.getAuthor());
