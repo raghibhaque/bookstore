@@ -1,6 +1,8 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import java.beans.Transient;
+
 public class BookTest {
 
     @Test
@@ -11,5 +13,11 @@ public class BookTest {
         assertEquals("Robert C. Martin", book.getAuthor());
         assertEquals(2008, book.getYearofPublication());
         assertEquals(9780132350884.0, book.getIsbn(), 0.0);
+    }
+
+    @Test 
+    public void testBookCreatedWithEmptyTitle(){
+        Book book = new Book ("", "Author Name", 2020, 1234567890123.0);
+        assertEquals("", book.getTitle());
     }
 }
