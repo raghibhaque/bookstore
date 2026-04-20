@@ -1,3 +1,8 @@
+package src.test.java;
+
+import src.main.*;
+import src.main.java.Book;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
