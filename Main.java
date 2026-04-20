@@ -48,5 +48,6 @@ public class Main {
         System.out.println("Author: " + book.getAuthor());
         System.out.println("Year of Publication: " + book.getYearofPublication());
         System.out.println("ISBN: " + book.getIsbn());
+        sc.close();
     }
 }
