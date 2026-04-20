@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew test *)",
+      "Bash(gradle test *)",
+      "Bash(java -version)",
+      "Read(//usr/local/bin/**)",
+      "Read(//usr/**)",
+      "Read(//home/raghib/**)",
+      "Bash(/home/raghib/.gradle/wrapper/dists/gradle-9.2.0-bin/11i5gvueggl8a5cioxuftxrik/gradle-9.2.0/bin/gradle wrapper *)"
+    ]
+  }
+}

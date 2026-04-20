@@ -1,7 +1,11 @@
 plugins {
-    java
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation('junit:junit:(4.13.2)')
+    testImplementation 'junit:junit:4.13.2'
 }
